@@ -11,6 +11,12 @@ A Safari web extension that protects native Command-click on real web links from
 
 Safari removes temporary extensions after 24 hours or when Safari quits. Reload it from the Extensions settings after editing these files.
 
+## Build the macOS app
+
+The `macOS` Xcode project packages the same files from `extension`. Run `./scripts/build-macos.sh` with Xcode 27 installed. The script prints the resulting `.app` path. Open that app once, then enable its extension in Safari Settings → Extensions. An ad hoc local build requires **Allow unsigned extensions** in Safari Settings → Developer each time Safari starts.
+
+Run the behavior checks with `node --test tests/protect-links.test.js`.
+
 ## Scope
 
 This protects genuine HTTP(S) links, including links inside shadow DOM and frames where Safari permits content scripts. A site can render a clickable element with no link URL in the DOM, or run code before an extension is injected. No web extension can infer an arbitrary destination or guarantee interception of every possible script-driven navigation. Report a failing page so its behavior can be examined and support expanded without guessing destinations.

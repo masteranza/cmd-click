@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9B9F79B306D9F2000C18817 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B9F79A306D9F2000C18817 /* AppDelegate.swift */; };
+		A9B9F79F306D9F2000C18817 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = A9B9F79D306D9F2000C18817 /* Main.html */; };
+		A9B9F7A1306D9F2000C18817 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A9B9F7A0306D9F2000C18817 /* Icon.png */; };
+		A9B9F7A3306D9F2000C18817 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = A9B9F7A2306D9F2000C18817 /* Style.css */; };
+		A9B9F7A5306D9F2000C18817 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = A9B9F7A4306D9F2000C18817 /* Script.js */; };
+		A9B9F7A7306D9F2000C18817 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B9F7A6306D9F2000C18817 /* ViewController.swift */; };
+		A9B9F7AA306D9F2000C18817 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9B9F7A8306D9F2000C18817 /* Main.storyboard */; };
+		A9B9F7AC306D9F2100C18817 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9B9F7AB306D9F2100C18817 /* Assets.xcassets */; };
+		A9B9F7B3306D9F2100C18817 /* Command Click Rescue Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A9B9F7B2306D9F2100C18817 /* Command Click Rescue Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A9B9F7B8306D9F2100C18817 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B9F7B7306D9F2100C18817 /* SafariWebExtensionHandler.swift */; };
+		A9B9F7C7306D9F2100C18817 /* icon.svg in Resources */ = {isa = PBXBuildFile; fileRef = A9B9F7C4306D9F2100C18817 /* icon.svg */; };
+		A9B9F7C8306D9F2100C18817 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = A9B9F7C5306D9F2100C18817 /* manifest.json */; };
+		A9B9F7C9306D9F2100C18817 /* protect-links.js in Resources */ = {isa = PBXBuildFile; fileRef = A9B9F7C6306D9F2100C18817 /* protect-links.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9B9F7B4306D9F2100C18817 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9B9F78F306D9F2000C18817 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9B9F7B1306D9F2100C18817;
+			remoteInfo = "Command Click Rescue Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A9B9F7BF306D9F2100C18817 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = PlugIns;
+			files = (
+				A9B9F7B3306D9F2100C18817 /* Command Click Rescue Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A9B9F797306D9F2000C18817 /* Command Click Rescue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Command Click Rescue.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9B9F79A306D9F2000C18817 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A9B9F79E306D9F2000C18817 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		A9B9F7A0306D9F2000C18817 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		A9B9F7A2306D9F2000C18817 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		A9B9F7A4306D9F2000C18817 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		A9B9F7A6306D9F2000C18817 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A9B9F7A9306D9F2000C18817 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A9B9F7AB306D9F2100C18817 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9B9F7AD306D9F2100C18817 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9B9F7B2306D9F2100C18817 /* Command Click Rescue Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Command Click Rescue Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9B9F7B7306D9F2100C18817 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		A9B9F7B9306D9F2100C18817 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9B9F7C4306D9F2100C18817 /* icon.svg */ = {isa = PBXFileReference; lastKnownFileType = text; name = icon.svg; path = ../../../extension/icon.svg; sourceTree = "<group>"; };
+		A9B9F7C5306D9F2100C18817 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../../extension/manifest.json; sourceTree = "<group>"; };
+		A9B9F7C6306D9F2100C18817 /* protect-links.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "protect-links.js"; path = "../../../extension/protect-links.js"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9B9F794306D9F2000C18817 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		A9B9F7AF306D9F2100C18817 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9B9F78E306D9F2000C18817 = {
+			isa = PBXGroup;
+			children = (
+				A9B9F799306D9F2000C18817 /* Command Click Rescue */,
+				A9B9F7B6306D9F2100C18817 /* Command Click Rescue Extension */,
+				A9B9F798306D9F2000C18817 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9B9F798306D9F2000C18817 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9B9F797306D9F2000C18817 /* Command Click Rescue.app */,
+				A9B9F7B2306D9F2100C18817 /* Command Click Rescue Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9B9F799306D9F2000C18817 /* Command Click Rescue */ = {
+			isa = PBXGroup;
+			children = (
+				A9B9F79A306D9F2000C18817 /* AppDelegate.swift */,
+				A9B9F7A6306D9F2000C18817 /* ViewController.swift */,
+				A9B9F7A8306D9F2000C18817 /* Main.storyboard */,
+				A9B9F7AB306D9F2100C18817 /* Assets.xcassets */,
+				A9B9F7AD306D9F2100C18817 /* Info.plist */,
+				A9B9F79C306D9F2000C18817 /* Resources */,
+			);
+			path = "Command Click Rescue";
+			sourceTree = "<group>";
+		};
+		A9B9F79C306D9F2000C18817 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A9B9F79D306D9F2000C18817 /* Main.html */,
+				A9B9F7A0306D9F2000C18817 /* Icon.png */,
+				A9B9F7A2306D9F2000C18817 /* Style.css */,
+				A9B9F7A4306D9F2000C18817 /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A9B9F7B6306D9F2100C18817 /* Command Click Rescue Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A9B9F7C3306D9F2100C18817 /* Resources */,
+				A9B9F7B7306D9F2100C18817 /* SafariWebExtensionHandler.swift */,
+				A9B9F7B9306D9F2100C18817 /* Info.plist */,
+			);
+			path = "Command Click Rescue Extension";
+			sourceTree = "<group>";
+		};
+		A9B9F7C3306D9F2100C18817 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A9B9F7C4306D9F2100C18817 /* icon.svg */,
+				A9B9F7C5306D9F2100C18817 /* manifest.json */,
+				A9B9F7C6306D9F2100C18817 /* protect-links.js */,
+			);
+			name = Resources;
+			path = "Command Click Rescue Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9B9F796306D9F2000C18817 /* Command Click Rescue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9B9F7C0306D9F2100C18817 /* Build configuration list for PBXNativeTarget "Command Click Rescue" */;
+			buildPhases = (
+				A9B9F793306D9F2000C18817 /* Sources */,
+				A9B9F794306D9F2000C18817 /* Frameworks */,
+				A9B9F795306D9F2000C18817 /* Resources */,
+				A9B9F7BF306D9F2100C18817 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9B9F7B5306D9F2100C18817 /* PBXTargetDependency */,
+			);
+			name = "Command Click Rescue";
+			productName = "Command Click Rescue";
+			productReference = A9B9F797306D9F2000C18817 /* Command Click Rescue.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9B9F7B1306D9F2100C18817 /* Command Click Rescue Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9B9F7BC306D9F2100C18817 /* Build configuration list for PBXNativeTarget "Command Click Rescue Extension" */;
+			buildPhases = (
+				A9B9F7AE306D9F2100C18817 /* Sources */,
+				A9B9F7AF306D9F2100C18817 /* Frameworks */,
+				A9B9F7B0306D9F2100C18817 /* Resources */,
+			);
+			buildRules = (
+			);
+			name = "Command Click Rescue Extension";
+			productName = "Command Click Rescue Extension";
+			productReference = A9B9F7B2306D9F2100C18817 /* Command Click Rescue Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9B9F78F306D9F2000C18817 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					A9B9F796306D9F2000C18817 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					A9B9F7B1306D9F2100C18817 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+				};
+			};
+			buildConfigurationList = A9B9F792306D9F2000C18817 /* Build configuration list for PBXProject "Command Click Rescue" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9B9F78E306D9F2000C18817;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A9B9F798306D9F2000C18817 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9B9F796306D9F2000C18817 /* Command Click Rescue */,
+				A9B9F7B1306D9F2100C18817 /* Command Click Rescue Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9B9F795306D9F2000C18817 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				A9B9F7A1306D9F2000C18817 /* Icon.png in Resources */,
+				A9B9F7AA306D9F2000C18817 /* Main.storyboard in Resources */,
+				A9B9F7A5306D9F2000C18817 /* Script.js in Resources */,
+				A9B9F79F306D9F2000C18817 /* Main.html in Resources */,
+				A9B9F7AC306D9F2100C18817 /* Assets.xcassets in Resources */,
+				A9B9F7A3306D9F2000C18817 /* Style.css in Resources */,
+			);
+		};
+		A9B9F7B0306D9F2100C18817 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				A9B9F7C8306D9F2100C18817 /* manifest.json in Resources */,
+				A9B9F7C9306D9F2100C18817 /* protect-links.js in Resources */,
+				A9B9F7C7306D9F2100C18817 /* icon.svg in Resources */,
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9B9F793306D9F2000C18817 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				A9B9F7A7306D9F2000C18817 /* ViewController.swift in Sources */,
+				A9B9F79B306D9F2000C18817 /* AppDelegate.swift in Sources */,
+			);
+		};
+		A9B9F7AE306D9F2100C18817 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				A9B9F7B8306D9F2100C18817 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9B9F7B5306D9F2100C18817 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9B9F7B1306D9F2100C18817 /* Command Click Rescue Extension */;
+			targetProxy = A9B9F7B4306D9F2100C18817 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A9B9F79D306D9F2000C18817 /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9B9F79E306D9F2000C18817 /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		A9B9F7A8306D9F2000C18817 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9B9F7A9306D9F2000C18817 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9B9F7BA306D9F2100C18817 /* Debug configuration for PBXProject "Command Click Rescue" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A9B9F7BB306D9F2100C18817 /* Release configuration for PBXProject "Command Click Rescue" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		A9B9F7BD306D9F2100C18817 /* Debug configuration for PBXNativeTarget "Command Click Rescue Extension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Command Click Rescue Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Command Click Rescue Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.ranza.commandclickrescue.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A9B9F7BE306D9F2100C18817 /* Release configuration for PBXNativeTarget "Command Click Rescue Extension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Command Click Rescue Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Command Click Rescue Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.ranza.commandclickrescue.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A9B9F7C1306D9F2100C18817 /* Debug configuration for PBXNativeTarget "Command Click Rescue" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Command Click Rescue/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Command Click Rescue";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_NSViewGestureRecognizerIsExclusive = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.ranza.commandclickrescue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A9B9F7C2306D9F2100C18817 /* Release configuration for PBXNativeTarget "Command Click Rescue" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Command Click Rescue/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Command Click Rescue";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_NSViewGestureRecognizerIsExclusive = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.ranza.commandclickrescue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9B9F792306D9F2000C18817 /* Build configuration list for PBXProject "Command Click Rescue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9B9F7BA306D9F2100C18817 /* Debug configuration for PBXProject "Command Click Rescue" */,
+				A9B9F7BB306D9F2100C18817 /* Release configuration for PBXProject "Command Click Rescue" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		A9B9F7BC306D9F2100C18817 /* Build configuration list for PBXNativeTarget "Command Click Rescue Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9B9F7BD306D9F2100C18817 /* Debug configuration for PBXNativeTarget "Command Click Rescue Extension" */,
+				A9B9F7BE306D9F2100C18817 /* Release configuration for PBXNativeTarget "Command Click Rescue Extension" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		A9B9F7C0306D9F2100C18817 /* Build configuration list for PBXNativeTarget "Command Click Rescue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9B9F7C1306D9F2100C18817 /* Debug configuration for PBXNativeTarget "Command Click Rescue" */,
+				A9B9F7C2306D9F2100C18817 /* Release configuration for PBXNativeTarget "Command Click Rescue" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9B9F78F306D9F2000C18817 /* Project object */;
+	validationLevel = 1;
+}
