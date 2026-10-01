@@ -1,5 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-  <rect width="128" height="128" rx="28" fill="#1473e6"/>
-  <path d="M37 45h39a16 16 0 0 1 0 32H64" fill="none" stroke="white" stroke-width="11" stroke-linecap="round"/>
-  <path d="M91 83H52a16 16 0 0 1 0-32h12" fill="none" stroke="white" stroke-width="11" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs><linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#338fff"/><stop offset="1" stop-color="#1945d4"/></linearGradient></defs>
+  <rect x="80" y="80" width="864" height="864" rx="194" fill="url(#blue)" stroke="#ffffff" stroke-opacity=".18" stroke-width="4"/>
+  <g fill="none" stroke="#ffffff" stroke-opacity=".85" stroke-width="18"><path d="M290 320 H390 C408 320 422 306 422 288 C422 270 408 256 390 256 C372 256 358 270 358 288 V420 C358 438 372 452 390 452 C408 452 422 438 422 420 C422 402 408 388 390 388 H258 C240 388 226 402 226 420 C226 438 240 452 258 452 C276 452 290 438 290 420 V288 C290 270 276 256 258 256 C240 256 226 270 226 288 C226 306 240 320 258 320 Z"/></g>
+  <polygon points="443,279 443,705 549,600 634,784 719,744 632,566 781,566" fill="white" stroke="#0d2b6e" stroke-width="22" stroke-linejoin="round"/>
 </svg>

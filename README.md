@@ -20,3 +20,19 @@ Run the behavior checks with `node --test tests/protect-links.test.js`.
 ## Scope
 
 This protects genuine HTTP(S) links, including links inside shadow DOM and frames where Safari permits content scripts. A site can render a clickable element with no link URL in the DOM, or run code before an extension is injected. No web extension can infer an arbitrary destination or guarantee interception of every possible script-driven navigation. Report a failing page so its behavior can be examined and support expanded without guessing destinations.
+
+## Mac App Store release
+
+The extension is being prepared for a **free** Mac App Store release, with no subscriptions or in-app purchases. Public source: [masteranza/cmd-click](https://github.com/masteranza/cmd-click).
+
+[Website](https://masteranza.github.io/cmd-click/) · [Support](https://masteranza.github.io/cmd-click/support.html) · [Privacy policy](https://masteranza.github.io/cmd-click/privacy.html) · [Command-click demo](https://masteranza.github.io/cmd-click/demo.html)
+
+The [submission kit](app-store/README.md) includes listing copy, a cursor icon, a 2880 × 1800 App Store screenshot, and signed archive/export instructions. Run `./scripts/archive-macos.sh` to create the universal Release archive, or add `--unsigned` for local verification. The app and extension target macOS 12 or later; Safari 27 is currently tested, and earlier versions still need device testing before release.
+
+## Icon assets
+
+`extension/icon.svg` is the vector cursor-and-Command artwork. Run `DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer xcrun swift scripts/generate-icons.swift` from the repository root to regenerate the macOS asset catalog, Safari PNG icons, companion-app icon, and website icon.
+
+## GitHub Pages
+
+The static marketing, support, privacy, and review-demo pages are in `docs/`. GitHub Pages serves `main` → `/docs`. They use no analytics, cookies, or third-party fonts.

@@ -1,19 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Command Click Rescue</title>
     <link rel="stylesheet" href="../Style.css">
     <script src="../Script.js" defer></script>
 </head>
 <body>
-    <img src="../Icon.png" width="128" height="128" alt="Command Click Rescue Icon">
-    <p class="state-unknown">You can turn on Command Click Rescue’s extension in Safari Extensions preferences.</p>
-    <p class="state-on">Command Click Rescue’s extension is currently on. You can turn it off in Safari Extensions preferences.</p>
-    <p class="state-off">Command Click Rescue’s extension is currently off. You can turn it on in Safari Extensions preferences.</p>
-    <button class="open-preferences">Quit and Open Safari Extensions Preferences…</button>
+    <main>
+        <header>
+            <img src="../Icon.png" width="96" height="96" alt="Mouse cursor with Command symbol">
+            <h1>Command Click Rescue</h1>
+            <p class="intro">Your click. A new tab.<br>Your place, preserved.</p>
+        </header>
+        <p id="status" class="status" role="status">Checking Safari extension…</p>
+        <section aria-label="Setup">
+            <ol>
+                <li><strong>Enable in Safari.</strong><span>Open Safari Settings → Extensions and turn on Command Click Rescue.</span></li>
+                <li><strong>Choose your websites.</strong><span>Allow access to the sites you want to protect. Choose All Websites to use it everywhere Safari permits.</span></li>
+                <li><strong>Hold ⌘ and click a link.</strong><span>Safari opens it in a new tab while you stay on the page. Normal clicks work as usual.</span></li>
+            </ol>
+            <button class="open-preferences">Open Safari Settings</button>
+            <p id="settings-error" role="alert" hidden>Safari Settings couldn’t open. Open Safari → Settings → Extensions manually.</p>
+        </section>
+        <footer>
+            <p>Free. No tracking. Everything happens on your Mac.</p>
+            <details><summary>Help &amp; limitations</summary><p>Reload a website after enabling the extension or changing access. Protection applies to real HTTP and HTTPS links, including links in frames and shadow DOM where Safari permits the extension to run. Download links and buttons without a link destination are left alone. Some sites run scripts before the extension and may still override a click. Safari controls whether new tabs open in the foreground or background. You can quit this app after setup; the extension keeps working.</p><p>Support: github.com/masteranza/cmd-click/issues</p></details>
+            <details><summary>Privacy policy</summary><p>Command Click Rescue does not collect, store, or transmit personal data, browsing history, or website content. On websites you allow, it examines the link under a Command-click to preserve Safari’s normal link action. This processing stays on your Mac. There are no analytics, advertising, accounts, or third-party SDKs. Change or revoke website access in Safari Settings → Extensions, or disable the extension at any time. This policy covers the app and extension, not the websites you visit. Effective October 1, 2026.</p></details>
+        </footer>
+    </main>
 </body>
 </html>

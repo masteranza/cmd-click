@@ -1,57 +1,53 @@
-//
-//  ViewController.swift
-//  Command Click Rescue
-//
-//  Created by Michał Mandrysz on 30/09/2026.
-//
-
 import Cocoa
 import SafariServices
 import WebKit
 
-let extensionBundleIdentifier = "dev.ranza.commandclickrescue.Extension"
+private final class WeakMessageHandler: NSObject, WKScriptMessageHandler {
+    weak var delegate: WKScriptMessageHandler?
+    init(_ delegate: WKScriptMessageHandler) { self.delegate = delegate }
+    func userContentController(_ controller: WKUserContentController, didReceive message: WKScriptMessage) {
+        delegate?.userContentController(controller, didReceive: message)
+    }
+}
 
 class ViewController: NSViewController, WKNavigationDelegate, WKScriptMessageHandler {
-
     @IBOutlet var webView: WKWebView!
+    private var extensionBundleIdentifier: String { "\(Bundle.main.bundleIdentifier!).Extension" }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.webView.navigationDelegate = self
-
-        self.webView.configuration.userContentController.add(self, name: "controller")
-
-        self.webView.loadFileURL(Bundle.main.url(forResource: "Main", withExtension: "html")!, allowingReadAccessTo: Bundle.main.resourceURL!)
+        webView.navigationDelegate = self
+        webView.configuration.userContentController.add(WeakMessageHandler(self), name: "controller")
+        NotificationCenter.default.addObserver(self, selector: #selector(refreshExtensionState),
+            name: NSApplication.didBecomeActiveNotification, object: nil)
+        guard let page = Bundle.main.url(forResource: "Main", withExtension: "html"),
+              let resources = Bundle.main.resourceURL else { return }
+        webView.loadFileURL(page, allowingReadAccessTo: resources)
     }
 
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        SFSafariExtensionManager.getStateOfSafariExtension(withIdentifier: extensionBundleIdentifier) { (state, error) in
-            guard let state = state, error == nil else {
-                // Insert code to inform the user that something went wrong.
-                return
-            }
+    deinit { NotificationCenter.default.removeObserver(self) }
 
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) { refreshExtensionState() }
+
+    @objc private func refreshExtensionState() {
+        SFSafariExtensionManager.getStateOfSafariExtension(withIdentifier: extensionBundleIdentifier) { [weak self] state, error in
             DispatchQueue.main.async {
-                if #available(macOS 13, *) {
-                    webView.evaluateJavaScript("show(\(state.isEnabled), true)")
+                guard let self else { return }
+                if let state, error == nil {
+                    self.webView.evaluateJavaScript("show(\(state.isEnabled))")
                 } else {
-                    webView.evaluateJavaScript("show(\(state.isEnabled), false)")
+                    self.webView.evaluateJavaScript("show(null)")
                 }
             }
         }
     }
 
-    func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
-        if (message.body as! String != "open-preferences") {
-            return;
-        }
-
-        SFSafariApplication.showPreferencesForExtension(withIdentifier: extensionBundleIdentifier) { error in
+    func userContentController(_ controller: WKUserContentController, didReceive message: WKScriptMessage) {
+        guard message.body as? String == "open-preferences" else { return }
+        SFSafariApplication.showPreferencesForExtension(withIdentifier: extensionBundleIdentifier) { [weak self] error in
             DispatchQueue.main.async {
-                NSApplication.shared.terminate(nil)
+                if error != nil { self?.webView.evaluateJavaScript("showSettingsError()") }
             }
         }
     }
-
 }

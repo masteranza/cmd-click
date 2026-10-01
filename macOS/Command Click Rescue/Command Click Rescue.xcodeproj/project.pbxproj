@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+        C1CC00000000000000000001 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = C1CC00000000000000000002 /* icons */; };
+        C1CC00000000000000000003 /* PrivacyInfo.xcprivacy in App Resources */ = {isa = PBXBuildFile; fileRef = C1CC00000000000000000005 /* PrivacyInfo.xcprivacy */; };
+        C1CC00000000000000000004 /* PrivacyInfo.xcprivacy in Extension Resources */ = {isa = PBXBuildFile; fileRef = C1CC00000000000000000005 /* PrivacyInfo.xcprivacy */; };
 		A9B9F79B306D9F2000C18817 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B9F79A306D9F2000C18817 /* AppDelegate.swift */; };
 		A9B9F79F306D9F2000C18817 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = A9B9F79D306D9F2000C18817 /* Main.html */; };
 		A9B9F7A1306D9F2000C18817 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A9B9F7A0306D9F2000C18817 /* Icon.png */; };
@@ -45,6 +48,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+        C1CC00000000000000000002 /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = ../../extension/icons; sourceTree = SOURCE_ROOT; };
+        C1CC00000000000000000005 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = SOURCE_ROOT; };
 		A9B9F797306D9F2000C18817 /* Command Click Rescue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Command Click Rescue.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9B9F79A306D9F2000C18817 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9B9F79E306D9F2000C18817 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
@@ -80,6 +85,7 @@
 		A9B9F78E306D9F2000C18817 = {
 			isa = PBXGroup;
 			children = (
+				C1CC00000000000000000005 /* PrivacyInfo.xcprivacy */,
 				A9B9F799306D9F2000C18817 /* Command Click Rescue */,
 				A9B9F7B6306D9F2100C18817 /* Command Click Rescue Extension */,
 				A9B9F798306D9F2000C18817 /* Products */,
@@ -132,6 +138,7 @@
 		A9B9F7C3306D9F2100C18817 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C1CC00000000000000000002 /* icons */,
 				A9B9F7C4306D9F2100C18817 /* icon.svg */,
 				A9B9F7C5306D9F2100C18817 /* manifest.json */,
 				A9B9F7C6306D9F2100C18817 /* protect-links.js */,
@@ -219,6 +226,7 @@
 		A9B9F795306D9F2000C18817 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
+				C1CC00000000000000000003 /* PrivacyInfo.xcprivacy in App Resources */,
 				A9B9F7A1306D9F2000C18817 /* Icon.png in Resources */,
 				A9B9F7AA306D9F2000C18817 /* Main.storyboard in Resources */,
 				A9B9F7A5306D9F2000C18817 /* Script.js in Resources */,
@@ -230,6 +238,8 @@
 		A9B9F7B0306D9F2100C18817 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
+				C1CC00000000000000000004 /* PrivacyInfo.xcprivacy in Extension Resources */,
+				C1CC00000000000000000001 /* icons in Resources */,
 				A9B9F7C8306D9F2100C18817 /* manifest.json in Resources */,
 				A9B9F7C9306D9F2100C18817 /* protect-links.js in Resources */,
 				A9B9F7C7306D9F2100C18817 /* icon.svg in Resources */,
@@ -334,7 +344,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -391,7 +401,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -403,21 +413,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AG5A94227H;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Command Click Rescue Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Command Click Rescue Extension";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 Michał Mandrysz";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -437,21 +447,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AG5A94227H;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Command Click Rescue Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Command Click Rescue Extension";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 Michał Mandrysz";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -471,18 +481,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				SKIP_INSTALL = NO;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AG5A94227H;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Command Click Rescue/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Command Click Rescue";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 Michał Mandrysz";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				INFOPLIST_KEY_NSViewGestureRecognizerIsExclusive = NO;
@@ -490,7 +503,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -513,18 +526,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				SKIP_INSTALL = NO;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AG5A94227H;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Command Click Rescue/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Command Click Rescue";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 Michał Mandrysz";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				INFOPLIST_KEY_NSViewGestureRecognizerIsExclusive = NO;
@@ -532,7 +548,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,

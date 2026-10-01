@@ -1,0 +1,23 @@
+{
+  "name": "Command Click Rescue",
+  "subtitle": "Keep Command-click working",
+  "version": "1.0.0",
+  "build": "1",
+  "platform": "macOS",
+  "bundle_id": "dev.ranza.commandclickrescue",
+  "sku": "command-click-rescue-macos",
+  "primary_category": "Utilities",
+  "primary_language": "en-US",
+  "price": "Free",
+  "in_app_purchases": false,
+  "subscriptions": false,
+  "support_url": "https://masteranza.github.io/cmd-click/support.html",
+  "privacy_policy_url": "https://masteranza.github.io/cmd-click/privacy.html",
+  "marketing_url": "https://masteranza.github.io/cmd-click/",
+  "keywords": "safari,command,click,links,tabs,browser,extension,navigation,shortcut",
+  "promotional_text": "Keep your place when you Command-click. Restore Safari’s native link action on websites that interfere with it. Free, with no accounts or tracking.",
+  "description": "Command-click should open a link in a new tab. Some websites intercept your click and navigate the current page instead. Command Click Rescue helps preserve Safari’s native link action.\n\nTurn it on in Safari Settings, allow access to your chosen websites, and browse as usual. Hold Command and click a real HTTP or HTTPS link. The extension stops interfering page event handlers while leaving Safari to open the link. Ordinary clicks and download links are untouched.\n\n• Protect native Command-click on real web links.\n• Choose individual websites or allow access to all websites.\n• Support for links in frames and shadow DOM where Safari permits the extension.\n• Keep Safari’s foreground and background tab preferences.\n• No accounts, analytics, ads, or tracking. Processing stays on your Mac.\n• Free, with no subscriptions or in-app purchases.\n\nThe companion app includes setup instructions, extension status, help, and a privacy policy. You can quit the app after setup; the extension keeps working in Safari.\n\nCommand Click Rescue protects genuine HTTP and HTTPS links. It cannot infer destinations for buttons that navigate only through JavaScript, and some scripts may run before the extension. Safari website access is required. Requires macOS 12 or later.",
+  "copyright": "2026 Michał Mandrysz",
+  "app_privacy": "Data Not Collected",
+  "review_notes": "This is a free macOS Safari web extension. No login, account, or purchase is required. Open the containing app, choose Open Safari Settings, enable Command Click Rescue, and grant website access. Reload an HTTP(S) page and Command-click a real anchor link; Safari should perform its native new-tab action while interfering page handlers are stopped. Ordinary clicks, download links, and JavaScript-only buttons are intentionally untouched. Website access is needed to observe the mouse event and inspect the link under it. No browsing data is stored or transmitted. You may quit the containing app after setup. For a deterministic test, open the public support-site demo at https://masteranza.github.io/cmd-click/demo.html, grant access to masteranza.github.io, and reload. Command-click the demo link: the destination should open in a new tab and the source should remain in place. Ordinary-click the demo link to see the page’s interfering handler. No credentials are needed."
+}
