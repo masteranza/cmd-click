@@ -1,6 +1,6 @@
 # Mac App Store submission kit
 
-Command Click Rescue 1.0.0 (build 1) is prepared as a **free** macOS Safari extension, with no purchases or subscriptions. This directory contains the listing fields, 1024-pixel icon, and an actual app capture composed into a 2880 × 1800 screenshot. The public code repository does not itself set an App Store price; set Free in App Store Connect before submitting.
+Command Click Rescue 1.0.0 (build 1) is prepared as a **free** macOS Safari extension, with no purchases or subscriptions. This directory contains the listing fields, 1024-pixel icon, and an actual app capture composed into a 2880 × 1800 screenshot. Free pricing is saved in App Store Connect for app **6818095124**, with availability in all 175 countries or regions on release.
 
 ## Product page
 
@@ -45,12 +45,16 @@ Completed on October 1, 2026:
 - All five `node --test tests/protect-links.test.js` checks pass.
 - Local app builds; the real setup window, extension status, and layout were inspected.
 - Signed universal Release archive builds for arm64 and x86_64.
-- App Store distribution export succeeds; the local `.pkg` is ready for upload.
+- App Store distribution export and upload succeed; processed build 1.0.0 (1) is attached to the version.
+- Product description, promotional text, keywords, URLs, copyright, screenshot, subtitle, and Utilities category are saved in App Store Connect.
+- Age rating is 4+. Free pricing and worldwide availability are saved.
+- Privacy policy URL and Data Not Collected responses are saved. Publishing the responses still requires confirming Apple's accuracy and update agreement.
+- The host's network-client sandbox usage explanation is saved for App Review.
 - Both bundles include the privacy manifest and matching version/build identifiers.
 - Sandbox and hardened runtime are enabled. The host keeps the network-client entitlement for its WebKit view, but its CSP prohibits connections and all UI resources are bundled. The extension has only the sandbox entitlement.
 - Template native-message logging and unused file-access entitlements are removed.
 
-Before submitting, validate the package in App Store Connect, select Free pricing, fill in review contact and age-rating answers, and add the listing and screenshot. The extension has been tested on Safari 27. Device testing on macOS 12 / earlier Safari versions and Intel hardware remains necessary if maintaining that minimum deployment target. Confirm extension activation and website permissions using the final App Store/TestFlight build; App Store server validation and review have not yet occurred.
+App Store Connect's Add for Review validation reports three remaining requirements: App Review contact name/email/phone, Content Rights Information, and publication of the prepared privacy responses. The app has not been submitted for review. The extension has been tested on Safari 27. Device testing on macOS 12 / earlier Safari versions and Intel hardware remains necessary if maintaining that minimum deployment target. Confirm extension activation and website permissions using the final App Store/TestFlight build.
 
 ## Artwork
 
